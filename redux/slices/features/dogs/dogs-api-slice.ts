@@ -1,6 +1,6 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const DOGS_API_KEY = "cbfb51a2-84b6-4025-a3e2-ed8616edf311";
+const DOGS_API_KEY = 'cbfb51a2-84b6-4025-a3e2-ed8616edf311';
 
 interface Bread {
   id: string;
@@ -11,11 +11,11 @@ interface Bread {
 }
 
 export const apiSlice = createApi({
-  reducerPath: "api",
+  reducerPath: 'api',
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://api.thedogapi.com/v1",
+    baseUrl: 'https://api.thedogapi.com/v1',
     prepareHeaders(headers) {
-      headers.set("x-api-key", DOGS_API_KEY);
+      headers.set('x-api-key', DOGS_API_KEY);
       return headers;
     },
   }),
@@ -30,4 +30,4 @@ export const apiSlice = createApi({
   },
 });
 
-export const { useFetchBreedsQuery } = apiSlice;
+// export const { useFetchBreedsQuery } = apiSlice;
