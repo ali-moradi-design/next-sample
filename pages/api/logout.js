@@ -7,7 +7,6 @@ export default async (req, res) => {
       cookie.serialize('accessToken', '', {
         httpOnly: true,
         secure: process.env.NODE_ENV !== 'DEVELOPMENT',
-        secure: true,
         expires: new Date(0),
         sameSite: 'none',
         path: '/',
