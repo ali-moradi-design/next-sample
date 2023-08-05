@@ -1,0 +1,42 @@
+{
+  "name": "material-next-ts",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
+    "cookie": "^0.5.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-redux": "^8.1.1",
+    "recharts": "^2.7.2",
+    "stylis": "^4.3.0",
+    "stylis-plugin-rtl": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.5.1",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/stylis": "^4.2.0",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.0",
+    "typescript": "latest"
+  }
+}
